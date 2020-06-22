@@ -13,8 +13,9 @@ import { StyleSheet, View, requireNativeComponent } from 'react-native';
 import { type MaskedViewProps } from './MaskedViewTypes';
 import React from 'react';
 
-const RNCMaskedView = requireNativeComponent<any>('RNCMaskedView');
-
+const RNCInvertedMaskedView = requireNativeComponent<any>(
+  'RNCInvertedMaskedView',
+);
 
 /**
  * Renders the child view with a mask specified in the `maskElement` prop.
@@ -53,7 +54,7 @@ const RNCMaskedView = requireNativeComponent<any>('RNCMaskedView');
  * transparent pixels block that content.
  *
  */
-export default class MaskedView extends React.Component<MaskedViewProps> {
+export default class InvertedMaskedView extends React.Component<MaskedViewProps> {
   _hasWarnedInvalidRenderMask = false;
 
   render() {
@@ -72,12 +73,12 @@ export default class MaskedView extends React.Component<MaskedViewProps> {
     }
 
     return (
-      <RNCMaskedView {...otherViewProps}>
+      <RNCInvertedMaskedView {...otherViewProps}>
         <View pointerEvents="none" style={StyleSheet.absoluteFill}>
           {maskElement}
         </View>
         {children}
-      </RNCMaskedView>
+      </RNCInvertedMaskedView>
     );
   }
 }

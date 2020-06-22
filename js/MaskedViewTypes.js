@@ -1,5 +1,6 @@
 // @flow
-import { type Node, type Element } from 'react';
+import { type Element, type Node } from 'react';
+
 import { ViewPropTypes } from 'react-native';
 
 export type MaskedViewProps = typeof ViewPropTypes &

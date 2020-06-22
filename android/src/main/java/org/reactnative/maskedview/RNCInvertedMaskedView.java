@@ -10,19 +10,19 @@ import android.view.View;
 
 import com.facebook.react.views.view.ReactViewGroup;
 
-public class RNCMaskedView extends ReactViewGroup {
-  private static final String TAG = "RNCMaskedView";
+public class RNCInvertedMaskedView extends ReactViewGroup {
+  private static final String TAG = "RNCInvertedMaskedView";
 
   private Bitmap mBitmapMask = null;
   private Paint mPaint;
   private PorterDuffXfermode mPorterDuffXferMode;
 
-  public RNCMaskedView(Context context) {
+  public RNCInvertedMaskedView(Context context) {
     super(context);
     setLayerType(LAYER_TYPE_SOFTWARE, null);
 
     mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
-    mPorterDuffXferMode = new PorterDuffXfermode(PorterDuff.Mode.DST_IN);
+    mPorterDuffXferMode = new PorterDuffXfermode(PorterDuff.Mode.DST_OUT);
   }
 
   @Override
