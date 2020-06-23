@@ -3,15 +3,15 @@
 import * as React from 'react';
 import * as ReactNative from 'react-native';
 
-interface MaskedViewProps extends ReactNative.ViewProps {
+interface InvertedMaskedViewProps extends ReactNative.ViewProps {
   maskElement: React.ReactElement;
 }
-/**
- * @see https://github.com/react-native-community/react-native-masked-view
- */
-declare class MaskedViewComponent extends React.Component<MaskedViewProps> {}
-declare const MaskedViewBase: ReactNative.Constructor<
+
+declare class InvertedMaskedViewComponent extends React.Component<
+  InvertedMaskedViewProps
+> {}
+declare const InvertedMaskedViewBase: ReactNative.Constructor<
   ReactNative.NativeMethodsMixin
 > &
-  typeof MaskedViewComponent;
-export default class MaskedView extends MaskedViewBase {}
+  typeof InvertedMaskedViewComponent;
+export default class InvertedMaskedView extends InvertedMaskedViewBase {}

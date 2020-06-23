@@ -10,7 +10,7 @@
 
 import { StyleSheet, View, requireNativeComponent } from 'react-native';
 
-import { type MaskedViewProps } from './MaskedViewTypes';
+import { type InvertedMaskedViewProps } from './InvertedMaskedViewTypes';
 import React from 'react';
 
 const RNCInvertedMaskedView = requireNativeComponent<any>(
@@ -54,7 +54,7 @@ const RNCInvertedMaskedView = requireNativeComponent<any>(
  * transparent pixels block that content.
  *
  */
-export default class InvertedMaskedView extends React.Component<MaskedViewProps> {
+export default class InvertedMaskedView extends React.Component<InvertedMaskedViewProps> {
   _hasWarnedInvalidRenderMask = false;
 
   render() {

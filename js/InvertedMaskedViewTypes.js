@@ -3,7 +3,7 @@ import { type Element, type Node } from 'react';
 
 import { ViewPropTypes } from 'react-native';
 
-export type MaskedViewProps = typeof ViewPropTypes &
+export type InvertedMaskedViewProps = typeof ViewPropTypes &
   $ReadOnly<{|
     children: Node,
     /**
