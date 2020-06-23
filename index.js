@@ -1,3 +1,3 @@
-import MaskedView from './js/MaskedView';
+import MaskedView from './js/InvertedMaskedView';
 
 export default MaskedView;
