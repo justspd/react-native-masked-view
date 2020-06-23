@@ -15,7 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-public class RNCInvertedMaskedViewManager extends ViewGroupManager<RNCMaskedView> {
+public class RNCInvertedMaskedViewManager extends ViewGroupManager<RNCInvertedMaskedView> {
   private static final String REACT_CLASS = "RNCInvertedMaskedView";
 
   @Override
@@ -24,7 +24,7 @@ public class RNCInvertedMaskedViewManager extends ViewGroupManager<RNCMaskedView
   }
 
   @Override
-  protected RNCMaskedView createViewInstance(ThemedReactContext themedReactContext) {
+  protected RNCInvertedMaskedView createViewInstance(ThemedReactContext themedReactContext) {
     return new RNCInvertedMaskedView(themedReactContext);
   }
 }
