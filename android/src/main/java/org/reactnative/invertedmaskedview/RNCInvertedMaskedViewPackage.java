@@ -16,12 +16,7 @@ public class RNCInvertedMaskedViewPackage implements ReactPackage {
     return Collections.emptyList();
   }
 
-    @Override
-    public List<Class<? extends JavaScriptModule>> createJSModules() {
-        return null;
-    }
-
-    @Override
+  @Override
   public List<ViewManager> createViewManagers(ReactApplicationContext reactApplicationContext) {
       return Arrays.<ViewManager>asList(
             new RNCInvertedMaskedViewManager()
