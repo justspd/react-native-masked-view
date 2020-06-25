@@ -1,4 +1,4 @@
-package org.reactnative.maskedview;
+package org.reactnative.invertedmaskedview;
 
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.JavaScriptModule;
@@ -16,7 +16,12 @@ public class RNCInvertedMaskedViewPackage implements ReactPackage {
     return Collections.emptyList();
   }
 
-  @Override
+    @Override
+    public List<Class<? extends JavaScriptModule>> createJSModules() {
+        return null;
+    }
+
+    @Override
   public List<ViewManager> createViewManagers(ReactApplicationContext reactApplicationContext) {
       return Arrays.<ViewManager>asList(
             new RNCInvertedMaskedViewManager()

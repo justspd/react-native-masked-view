@@ -1,4 +1,4 @@
-package org.reactnative.maskedview;
+package org.reactnative.invertedmaskedview;
 
 import android.content.Context;
 import android.graphics.Bitmap;
